@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nashik Tourism</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 92%;
+            margin: auto;
+        }
+        nav {
+            height: 100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul{
+            width: 53%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 22px;
+        }
+
+        nav ul li{
+            list-style-type: none;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: white;
+            background-color: rgb(16, 99, 155);
+            padding: 5px 19px 6px 20px;
+            border-radius: 18px;
+            border: 2px solid rgb(16, 99, 155);
+        }
+
+        nav ul li a:hover{
+            color: rgb(16, 99, 155);
+            background-color: white;
+            padding: 5px 19px 6px 20px;
+            border-radius: 18px;
+            border: 2px solid rgb(16, 99, 155);
+        }
+        nav img{
+            width: auto;
+            height: 85px;
+            margin-top: 10px;
+        }
+        div ul{
+            list-style-type: none;
+            font-size: 18px;
+            padding-top: 10px;
+        }
+        div ul li a{
+            text-decoration: none;
+
+        }
+
+        h1{
+            background-color: rgb(16, 99, 155);
+            padding: 12px;
+            color: white;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        /* section 1  */
+        .sec1{
+            width: 86%;
+            height: 720px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        
+        .sec1 p{
+            font-size: 15px;
+        }
+
+        /* section 2  */
+        .sec2{
+            width: 86%;
+            height: 1500px;
+            margin: auto;
+        }
+        .imgsec{
+            margin: auto;
+            height: 400px;
+            width: 99%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 130px;
+        }
+        .img{
+            height: 500px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.349);
+            text-align: center;
+        }
+        .img button{
+            margin: auto;
+            background-color: rgb(16, 99, 155);
+            padding: 6px;
+            font-size: 15px;
+            width: 130px;
+            color: aliceblue;
+            border-color: aliceblue;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .img button:hover{
+            background-color: white;
+            color: rgb(16, 99, 155);
+            border: 1px solid rgb(16, 99, 155);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- logo  -->
+    <nav>
+        <img class="logo" src="data:image/jpeg;base64,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" alt="">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heritage.html">Heritage</a></li>
+            <li><a href="HotelBooking.html">Hotel Booking</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="MoreAboutNashik.html">More About Nashik</a></li>
+        </ul>
+    </nav>
+    <hr>
+    
+
+    <!-- sec 1 Nashik  -->
+    
+    <h1>Nashik District  &nbsp;|&nbsp;  नाशिक जिल्हा  &nbsp;|&nbsp;  Maharashtra</h1>
+    <img style="width:100%; height:600px; margin:auto;" src="https://image3.mouthshut.com/images/imagesp/925640629s.jpg" alt="">
+    <div class="sec1">
+        <p>Nashik District is located between 18.33 degree and 20.53 degree North latitude and between 73.16 degree and 75.16 degree East Longitude at Northwest part of the Maharashtra state, at 565 meters above mean sea level. The District has great mythological background. Lord Rama lived in Panchvati during his vanvas. Agasti Rushi also stayed in Nashik for Tapasya. The Godavari river originates from Trimbakeshwar in Nashik. One of the 12 Jyotirlingas also at Trimbakeshwar. Nashik has to its credit many well known and towering personalities like Veer Sawarkar, Anant Kanhere , Rev. Tilak, Dadasaheb Potnis, Babubhai Rathi, V.V. Shirwadkar and Vasant Kanetkar just name few. Nashik is also known as Mini Maharashtra, because the climate and soil conditions of Surgana, Peth, Igatpuri resembles with Konkan. Niphad, Sinnar, Dindori, Baglan blocks are like Western Maharashtra and yeola, Nandgaon, Chandwad blocks are like Vidarbha Region. Nashik, Malegaon, Manmad, Igatpuri are some of the big cities situated in the Nashik District.</p>
+        <p>Nashik is an ancient holy city in Maharashtra, a state in western India. It’s known for its links to the “Ramayana” epic poem. On the Godavari River is Panchavati, a temple complex. Nearby, Lord Rama was thought to have bathed at Ram Kund water tank, today attended by Hindu devotees. Shri Kalaram Sansthan Mandir is an ancient shrine to Rama, while Rama and Sita are said to have worshipped at Sita Gufaa caves.</p>
+        <br>
+
+        <h3>Geography</h3>
+        <p>Nashik is the third largest city of Maharashtra after Mumbai & Pune. Nashik lies in the northern part of Maharashtra state at 700 m (2,300 ft) from the mean sea level which gives it ideal temperature variation, particularly in winters. Nashik lies at altitude of 700m above sea level and has lush mountainous terrain. The river Godavari originates from the Brahmagiri Mountain, Trimbakeshwar about 24 km (15 mi) from Nashik and flows through the old residential settlement, now in the central part of the city. Due to high pollution created by factories in proximity of the city the river was dying at an alarming rate. It has since been successfully cleaned. Other than Godavari, important rivers like Vaitarana, Bhima, Girana, Kashyapi and Darana flow across Nashik. Nashik lies on the western edge of the Deccan Plateau which is a volcanic formation. Trimbakeshwar is about 30 km (19 mi) from the city, it is where from river Godavari originates. The land area of the city is about 259.13 km2 (100.05 sq mi). Anjaneri near Nashik is the birth place of lord Hanuman.</p>
+<br>
+
+        <h3>Name Origin</h3>
+        <p>The origin of the name of Nashik is linked with the epic of Ramayana. According to this epic, Laxman cut off the nose of Shurpanaka of Ravana’s sister. So this place was called ‘Nasik’. The Government of Maharashtra changed it to Nashik.The Godavari river flowing through the two parts of Nashik and Panchavati flows through the nine hills, ie the flowing from the ‘Nav Shikhan’. The Sanskrit word shikha means hill. This means that ‘Nav Shikha’ has become Nashik from the city. From ancient times, Nashik city and surrounding area were known by different names. There are five such names, such as Janasthan, Trikantak, Gulshanabad, Nasik and Existing Nashik. Historical period has been considered as a religious place of Nashik. It is mentioned that Shriram was staying at ‘Panchavati’ in the Ramayana in Nashik area. Mahakavi Kalidas and Bhavabhuti have expressed their respect for Nashik. During the Mughal empire, Nashik was known as Gulshanabad, the city of Gulab, as ‘Gulshananabad’. There are two opinions about how the city was named “Nashik”. There is such an opinion that “Navishi is a city of nine peaks” and later Deshbas Nashik. And there is another reference to Ramayana. When Ram, his wife Sita and brother Lakshman lived in Panchavati area of Nashik, they cut the nose of Ravana’s sister (‘Nasika’ in the Sanskrit language) at this place in Shurancha. It has also been called Nasik or Nashik. This opinion is more popular. There is a possibility that Nasik should be named as Nasik, hence it is called as Nasik. Nashik is the main center of the Ambedkar movement. Dadasaheb Gaikwad was born in this land. In the four Kumbh Mela of India, the area of ??Simhastha Kumbh Mela is in Nashik. Every 12 years, the Kumbh Mela is filled here. The temples here and the Godavari river are famous. There are warehouses that are excavated around AD Sun 1200. Godavari river is called South Ganges in Nashik.</p>
+        <br>
+    </div>
+
+    
+    <!-- footer  -->
+    <div style="background-color:rgb(16, 99, 155); padding: 10px; text-align: center; color: white; margin-top: 70px;" class="cr">
+        Copyright &#169; 2022
+    </div>
+</body>
+</html>
